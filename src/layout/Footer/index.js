@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-import footerCrown from "../../../assets/images/govuk-crest-2x.png";
+import footerCrown from "../../assets/images/govuk-crest-2x.png";
 
 const Footer = () => {
     return (

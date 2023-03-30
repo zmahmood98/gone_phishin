@@ -2,8 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './index.css';
-import '../../../assets/styles/govuk-frontend-4.5.0.min.css'
-import crownLogo from '../../../assets/images/govuk-logotype-crown.png' 
+import '../../assets/styles/govuk-frontend-4.5.0.min.css'
+import crownLogo from '../../assets/images/govuk-logotype-crown.png' 
 
 const Header = () => {
     return (
