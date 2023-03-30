@@ -39,8 +39,8 @@ const Footer = () => {
 
                     
                     <span class="govuk-footer__licence-description">
-                        All content is available under the
-                        <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+                        <p>All content is available under the &#160;
+                        <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
                     </span>
                 </div>
                 <div class="govuk-footer__meta-item">
