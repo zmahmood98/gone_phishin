@@ -4,8 +4,10 @@ import './App.css';
 
 import { Home, Info} from './pages';
 import { Header, Footer} from './layout';
+import { useEffect } from 'react';
 
 function App() {
+
     return (
       <>
         <Header />
