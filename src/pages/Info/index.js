@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-function Background () {
+function Info () {
     return (
       <>
         <div className='background-div'>
@@ -11,4 +11,4 @@ function Background () {
     );
   }
   
-  export default Background;
+  export default Info;

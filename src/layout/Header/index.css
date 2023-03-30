@@ -8,6 +8,7 @@
 .app-navigation__link:not([hidden]) {
     display: inline-block;
 }
+
 .govuk-link--no-visited-state:visited {
     color: #1d70b8;
 }
@@ -20,6 +21,10 @@
     font-weight: 700;
     font-size: 19px;
     font-size: 1.1875rem;
+}
+
+.app-navigation__link:hover {
+    color:#003078;
 }
 .app-prose-scope a, .govuk-link {
     font-family: "GDS Transport",arial,sans-serif;
@@ -38,6 +43,7 @@ a:-webkit-any-link {
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-left: 30px;
 }
 
 ul {

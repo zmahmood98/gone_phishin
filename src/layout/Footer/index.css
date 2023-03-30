@@ -1,13 +1,12 @@
-#footer {
-    width: 100vw;
+footer {
     position: relative;
-    padding: 10px;
-    display: block;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    margin: 0;
-    color: #222222;
     bottom:0;
-    z-index: -1;
+}
+
+footer img {
+    display: block;
+}
+
+footer ul {
+    margin-left: -10px;
 }

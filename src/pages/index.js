@@ -1,2 +1,2 @@
 export { default as Home } from './Home';
-export { default as Background } from './Background';
+export { default as Info } from './Info';

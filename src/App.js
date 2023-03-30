@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes} from 'react-router-dom'
 import './App.css';
 
-import { Home, Background} from './pages';
+import { Home, Info} from './pages';
 import { Header, Footer} from './layout';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/background" element={<Background />} />
+          <Route path="/info" element={<Info />} />
         </Routes>
         <Footer />
       </>

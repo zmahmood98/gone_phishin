@@ -27,7 +27,7 @@ const Header = () => {
                         <NavLink exact to="/"  activeClassName="active"><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline app-navigation__link js-app-navigation__link">Home</a></NavLink>
                     </li>
                     <li class="app-navigation__list-item ">
-                        <NavLink to="/background" activeClassName="active"><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline app-navigation__link js-app-navigation__link">More Information</a></NavLink>
+                        <NavLink to="/info" activeClassName="active"><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline app-navigation__link js-app-navigation__link">More Information</a></NavLink>
                     </li>
                 </ul>
                 
