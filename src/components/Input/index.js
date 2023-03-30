@@ -20,7 +20,11 @@ const Input = () => {
                     <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" />
                 </div>
                 </fieldset>
+                <button class="govuk-button" data-module="govuk-button">
+                    Scan
+                </button>
         </div>
+
         </>
     )
 
