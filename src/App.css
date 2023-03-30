@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #f7fdff;
+    overflow-x: hidden;
+}

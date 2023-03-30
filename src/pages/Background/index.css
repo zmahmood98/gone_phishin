@@ -1,0 +1,6 @@
+.construction-image {
+    z-index: -1;
+    position: relative;
+    display: block;
+    width: 100vw;
+}
