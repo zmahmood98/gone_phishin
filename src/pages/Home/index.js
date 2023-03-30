@@ -8,7 +8,7 @@ function Home () {
         e.preventDefault()
     
         // Handle validations
-        axios.post({localhost:8080/score}, {url})
+        axios.post({'gone-phishin-xgov-hackathon.vercel.app/score'}, {url: url})
         .then(response => {
             console.log(response)
             // take score from the response - setScore to that
