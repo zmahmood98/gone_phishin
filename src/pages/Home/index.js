@@ -20,6 +20,38 @@ function Home () {
 
                     <Input />
                 </section>
+
+                <section className='govuk-width-container'>
+                    <h2 className="govuk-heading-m h2">Results</h2>
+                    <dl class="govuk-summary-list">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                            URL
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                            [dynamic content]
+                            </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                            Percentage Score
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                            [dc]%
+                            </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                            Details
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                            <p class="govuk-body">It is [dc] that this link is part of a phishing scam.</p>
+                            </dd>
+                        </div>
+                        </dl>
+                </section>
+
+
         </>
     );
 }
