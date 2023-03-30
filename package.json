@@ -1,18 +1,7 @@
 {
-  "name": "gone_phishing_website",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zmahmood98/gone_phishing.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zmahmood98/gone_phishing/issues"
-  },
-  "homepage": "https://github.com/zmahmood98/gone_phishing#readme",
+  "name": "gone_phishing",
+  "version": "0.1.0",
+  "private": true,
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@testing-library/jest-dom": "^5.16.2",
