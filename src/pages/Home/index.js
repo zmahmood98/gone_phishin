@@ -13,22 +13,17 @@ function Home () {
     useEffect(()=> {
         if (score == null) {
         setDetails("Loading...");
-        } else if (score <= 45) {
-        console.log("low chance");
+        } else if (score >= 75) {
+        setDetails(
+          "It is extremely likely that this link is part of a phishing scam."
+        );
+        setColor({color: 'red'})
+        } else {
         setDetails(
             "It is not very likely that this link is part of a phishing scam."
         );
-        } else if (score >= 60) {
-        console.log("high chance");
-        setDetails(
-            "It is extremely likely that this link is part of a phishing scam."
-        );
-        } else {
-        console.log("medium chance");
-        setDetails(
-            "We currently cannot evaluate accurately whether or not this link is part of a phishing scam."
-        );
-        }   
+        setColor({color: 'green'});
+        } 
     })
 
 
@@ -52,6 +47,7 @@ function Home () {
     const [url, setUrl] = useState()
     const [score, setScore] = useState()
     const [details, setDetails] = useState()
+    const [color, setColor] = useState({color: 'black'})
 
     return (
       <>
@@ -106,7 +102,7 @@ function Home () {
             </div>
             <div class="govuk-summary-list__row">
               <dt class="govuk-summary-list__key">Percentage Score</dt>
-              <dd class="govuk-summary-list__value">{score}%</dd>
+              <dd class="govuk-summary-list__value" style={color}>{score}%</dd>
             </div>
             <div class="govuk-summary-list__row">
               <dt class="govuk-summary-list__key">Details</dt>
