@@ -25,25 +25,22 @@ function Home () {
         );
         setColor({color: 'green'});
         } 
-    })
 
+        if (url == "") {
+          setDetails("")
+          setScore(0)
+        }
+    })
 
     const handleSubmit = async (e) => {
       e.preventDefault();
 
       // Handle validations
-     await axios
+    await axios
         .post("http://127.0.0.1:5000/score", { url: url })
         .then((response) => {
-          
-          // take score from the response - setScore to that
           setScore((response.data * 100).toFixed(2));
-          console.log(score);
-          console.log(typeof score);
-        
         });
-
-
     };
 
     const [url, setUrl] = useState()
@@ -80,7 +77,7 @@ function Home () {
                   name="address-line-1"
                   type="text"
                   autocomplete="address-line1"
-                  value={url}
+                  
                   onChange={(e) => setUrl(e.target.value)}
                 />
               </div>
