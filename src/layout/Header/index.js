@@ -16,7 +16,7 @@ const Header = () => {
                             <img class="crown" src={crownLogo} ></img>
                             <span class="govuk-header__logotype-text">GOV.UK</span>
                         </span>
-                        <span class="govuk-header__product-name"> Gone Phishin</span>
+                        <span class="govuk-header__product-name"> Spam Service</span>
                     </a>
                     </div>
                 </div>
