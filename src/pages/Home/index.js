@@ -86,7 +86,7 @@ function Home () {
               </div>
             </fieldset>
             <button
-              class="govuk-button"
+              class="govuk-button button"
               data-module="govuk-button"
               type="submit"
               onClick={changeVisibility}
