@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, Component } from 'react';
 import axios from "axios";
 import './index.css';
+import { Banner } from '../../components';
 
 function Home () {
     const [show, setShow] = useState(false);
@@ -42,7 +43,7 @@ function Home () {
         
         });
 
-        
+
     };
 
     const [url, setUrl] = useState()
@@ -52,6 +53,7 @@ function Home () {
 
     return (
       <>
+      <Banner />
         <section className="govuk-width-container">
           <div className="home-div">
             <h1 className="govuk-heading-l">URL Scan</h1>
