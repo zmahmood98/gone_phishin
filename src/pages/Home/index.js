@@ -6,9 +6,10 @@ import { Banner } from '../../components';
 function Home () {
     const [show, setShow] = useState(false);
     const changeVisibility = () => {
-        if (score==null) {
-        setShow(!show);
-        }
+        // if (score==null) {
+        // setShow(!show);
+        // }
+        setShow(!show)
     };
 
     useEffect(()=> {
@@ -47,6 +48,12 @@ function Home () {
     const [score, setScore] = useState()
     const [details, setDetails] = useState()
     const [color, setColor] = useState({color: 'black'})
+
+    useEffect(() => {
+      if (url == "") {
+        setShow(!show)
+      }
+    }, [url])
 
     return (
       <>
