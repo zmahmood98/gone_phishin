@@ -60,22 +60,25 @@ function Home () {
 
     return (
       <>
-      {/* <Banner /> */}
+        {/* <Banner /> */}
         <section className="govuk-width-container">
           <div className="home-div">
             <h1 className="govuk-heading-l">URL Scan</h1>
 
             <p className="govuk-body-l">
-              The following service will scan any URL inputted and produce a
-              percentage score to inform you of how likely it is that the link
-              is part of a phishing scam.{" "}
+              This service is designed to provide an efficient and reliable way
+              to detect phishing scams and protect users from potential harm. By
+              analysing various factors such as the domain name and URL structure, the service can determine the
+              likelihood that the link is part of a phishing scam. The resulting
+              percentage score is a valuable tool that will enable you to make an
+              informed decision about whether to click on a link or not.{" "}
             </p>
           </div>
 
           <form class="input-div" method="post" onSubmit={handleSubmit}>
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                <h1 class="govuk-fieldset__heading">What is your URL?</h1>
+                <h1 class="govuk-fieldset__heading gov-heading_custom">What is your URL?</h1>
               </legend>
               <div class="govuk-form-group">
                 <label class="govuk-label" for="address-line-1">
@@ -87,7 +90,6 @@ function Home () {
                   name="address-line-1"
                   type="text"
                   autocomplete="address-line1"
-                  
                   onChange={(e) => setUrl(e.target.value)}
                 />
               </div>
@@ -102,27 +104,29 @@ function Home () {
             </button>
           </form>
         </section>
-      {show &&
-        <section className="govuk-width-container hide-results">
-          <h2 className="govuk-heading-m h2">Results</h2>
-          <dl class="govuk-summary-list">
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">URL</dt>
-              <dd class="govuk-summary-list__value">{url}</dd>
-            </div>
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">Percentage Score</dt>
-              <dd class="govuk-summary-list__value" style={color}>{score}%</dd>
-            </div>
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">Details</dt>
-              <dd class="govuk-summary-list__value">
-                <p class="govuk-body">{details}</p>
-              </dd>
-            </div>
-          </dl>
-        </section>
-      }
+        {show && (
+          <section className="govuk-width-container hide-results">
+            <h2 className="govuk-heading-m h2">Results</h2>
+            <dl class="govuk-summary-list">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">URL</dt>
+                <dd class="govuk-summary-list__value">{url}</dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">Percentage Score</dt>
+                <dd class="govuk-summary-list__value" style={color}>
+                  {score}%
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">Details</dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">{details}</p>
+                </dd>
+              </div>
+            </dl>
+          </section>
+        )}
       </>
     );
 }
