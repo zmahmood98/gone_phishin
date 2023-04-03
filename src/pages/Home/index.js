@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, Component } from 'react';
+import React, { useState, useEffect} from 'react';
 import axios from "axios";
 import './index.css';
 import { Banner } from '../../components';
@@ -30,7 +30,7 @@ function Home () {
         setColor({color: 'green'});
         } 
 
-        if (url == "") {
+        if (url === "") {
           setDetails("")
           setScore(0)
         }
@@ -53,10 +53,10 @@ function Home () {
     const [color, setColor] = useState({color: 'black'})
 
     useEffect(() => {
-      if (url == "") {
+      if (url === "") {
         setShow(!show)
       }
-    }, [url])
+    }, [url, show])
 
     return (
       <>

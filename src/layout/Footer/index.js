@@ -34,7 +34,7 @@ const Footer = () => {
                             </li>
                         </ul>
                         <div class="govuk-footer__meta-custom">
-                        Built by the <a href="" class="govuk-footer__link">Gone Phishin team</a>
+                        Built by the <a href="/" class="govuk-footer__link">Gone Phishin team</a>
                         </div>
 
                     
@@ -44,7 +44,7 @@ const Footer = () => {
                     </span>
                 </div>
                 <div class="govuk-footer__meta-item">
-                    <img  src={footerCrown} width="125px"></img>
+                    <img  src={footerCrown} width="125px" alt="UK Government Crest"></img>
                     <a class="govuk-footer__link " href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
                 </div>
                 </div>
