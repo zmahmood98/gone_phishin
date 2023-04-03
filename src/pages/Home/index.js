@@ -53,10 +53,10 @@ function Home () {
     const [color, setColor] = useState({color: 'black'})
 
     useEffect(() => {
-      if (url === "") {
-        setShow(!show)
+      if (url == "") {
+        setShow(false)
       }
-    }, [url, show])
+    }, [url])
 
     return (
       <>
