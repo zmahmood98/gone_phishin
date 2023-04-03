@@ -9,12 +9,15 @@ function Home () {
         // if (score==null) {
         // setShow(!show);
         // }
-        setShow(!show)
+        if (url != null && url.length >= 1) {
+          setShow(!show);
+        }
     };
 
     useEffect(()=> {
         if (score == null) {
         setDetails("Loading...");
+        setScore("Calculating Percentage...")
         } else if (score >= 75) {
         setDetails(
           "It is extremely likely that this link is part of a phishing scam."
@@ -37,11 +40,11 @@ function Home () {
       e.preventDefault();
 
       // Handle validations
-    await axios
-        .post("http://127.0.0.1:5000/score", { url: url })
-        .then((response) => {
-          setScore((response.data * 100).toFixed(2));
-        });
+      await axios
+          .post("http://127.0.0.1:5000/score", { url: url })
+          .then((response) => {
+            setScore((response.data * 100).toFixed(2));
+          });
     };
 
     const [url, setUrl] = useState()
@@ -99,7 +102,7 @@ function Home () {
             </button>
           </form>
         </section>
-{show &&
+      {show &&
         <section className="govuk-width-container hide-results">
           <h2 className="govuk-heading-m h2">Results</h2>
           <dl class="govuk-summary-list">
@@ -119,7 +122,7 @@ function Home () {
             </div>
           </dl>
         </section>
-}
+      }
       </>
     );
 }
