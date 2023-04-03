@@ -60,7 +60,7 @@ function Home () {
 
     return (
       <>
-      <Banner />
+      {/* <Banner /> */}
         <section className="govuk-width-container">
           <div className="home-div">
             <h1 className="govuk-heading-l">URL Scan</h1>
