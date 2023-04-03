@@ -28,7 +28,7 @@ const Banner = () => {
                 server locally please click &nbsp;
                 <a
                   class="govuk-notification-banner__link"
-                  href="https://github.com/zmahmood98/gone-phishin-xgov-hackathon"
+                  href="https://github.com/parminder-thindal-moj/gone-phishin-xgov-hackathon"
                 >
                   here
                 </a>
