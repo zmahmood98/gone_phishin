@@ -41,7 +41,7 @@ function Home () {
 
       // Handle validations
       await axios
-          .post("http://127.0.0.1:5000/score", { url: url })
+          .post("https://gone-phishin-w7qq.onrender.com/score", { url: url })
           .then((response) => {
             setScore((response.data * 100).toFixed(2));
           });
