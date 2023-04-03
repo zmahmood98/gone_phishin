@@ -29,6 +29,7 @@ const Banner = () => {
                 <a
                   class="govuk-notification-banner__link"
                   href="https://github.com/parminder-thindal-moj/gone-phishin-xgov-hackathon"
+                  target="_blank"
                 >
                   here
                 </a>
