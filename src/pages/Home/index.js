@@ -105,7 +105,7 @@ function Home () {
           </form>
         </section>
         {show && (
-          <section className="govuk-width-container hide-results">
+          <section className="govuk-width-container results">
             <h2 className="govuk-heading-m h2">Results</h2>
             <dl class="govuk-summary-list">
               <div class="govuk-summary-list__row">
