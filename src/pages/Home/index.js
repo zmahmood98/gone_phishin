@@ -43,7 +43,7 @@ function Home() {
 
     // Handle validations
     await axios
-      .post("https://gone-phishin-w7qq.onrender.com/score", { url: url })
+      .post("https://flask-service-cors.enes6h8hrh0rm.eu-west-2.cs.amazonlightsail.com/score", { url: url })
       .then((response) => {
         console.log(response);
         setScore((response.data * 100).toFixed(2));
