@@ -10,7 +10,9 @@ function Home() {
     // setShow(!show);
     // }
     if (url != null && url.length >= 1) {
-      setShow(!show);
+      setShow(true);
+    } else {
+      setShow(false)
     }
   };
 
